@@ -13,9 +13,11 @@
 		BC077CA81F01048400C8EA7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC077CA61F01048400C8EA7D /* Main.storyboard */; };
 		BC077CAA1F01048400C8EA7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC077CA91F01048400C8EA7D /* Assets.xcassets */; };
 		BC077CAD1F01048400C8EA7D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC077CAB1F01048400C8EA7D /* LaunchScreen.storyboard */; };
+		FA4F9D31D84918DD56B9EDF5 /* libPods-Automatic Depolyment.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FC956B0FA08A8EE28E2D785F /* libPods-Automatic Depolyment.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0374D96E629E50B185B70D2C /* Pods-Automatic Depolyment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Automatic Depolyment.release.xcconfig"; path = "Pods/Target Support Files/Pods-Automatic Depolyment/Pods-Automatic Depolyment.release.xcconfig"; sourceTree = "<group>"; };
 		BC077C9A1F01048400C8EA7D /* Automatic Depolyment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Automatic Depolyment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC077C9E1F01048400C8EA7D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BC077CA01F01048400C8EA7D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +28,8 @@
 		BC077CA91F01048400C8EA7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC077CAC1F01048400C8EA7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC077CAE1F01048400C8EA7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED1E2BF7B932D68F8C66FA46 /* Pods-Automatic Depolyment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Automatic Depolyment.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Automatic Depolyment/Pods-Automatic Depolyment.debug.xcconfig"; sourceTree = "<group>"; };
+		FC956B0FA08A8EE28E2D785F /* libPods-Automatic Depolyment.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Automatic Depolyment.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA4F9D31D84918DD56B9EDF5 /* libPods-Automatic Depolyment.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		85D3C8C11F6743DAE50E1DB9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ED1E2BF7B932D68F8C66FA46 /* Pods-Automatic Depolyment.debug.xcconfig */,
+				0374D96E629E50B185B70D2C /* Pods-Automatic Depolyment.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		BC077C911F01048300C8EA7D = {
 			isa = PBXGroup;
 			children = (
 				BC077C9C1F01048400C8EA7D /* Automatic Depolyment */,
 				BC077C9B1F01048400C8EA7D /* Products */,
+				85D3C8C11F6743DAE50E1DB9 /* Pods */,
+				EB9A93AB523B62DD684E9746 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +95,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		EB9A93AB523B62DD684E9746 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FC956B0FA08A8EE28E2D785F /* libPods-Automatic Depolyment.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +110,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BC077CB11F01048400C8EA7D /* Build configuration list for PBXNativeTarget "Automatic Depolyment" */;
 			buildPhases = (
+				BE15720DB9925F559E66D867 /* [CP] Check Pods Manifest.lock */,
 				BC077C961F01048400C8EA7D /* Sources */,
 				BC077C971F01048400C8EA7D /* Frameworks */,
 				BC077C981F01048400C8EA7D /* Resources */,
+				6D6960C8901485022A66521C /* [CP] Embed Pods Frameworks */,
+				C20498C79CE7C33BB071ABEF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -145,6 +172,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6D6960C8901485022A66521C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Automatic Depolyment/Pods-Automatic Depolyment-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE15720DB9925F559E66D867 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C20498C79CE7C33BB071ABEF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Automatic Depolyment/Pods-Automatic Depolyment-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BC077C961F01048400C8EA7D /* Sources */ = {
@@ -271,6 +346,7 @@
 		};
 		BC077CB21F01048400C8EA7D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED1E2BF7B932D68F8C66FA46 /* Pods-Automatic Depolyment.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = WRBW3Z36M6;
@@ -283,6 +359,7 @@
 		};
 		BC077CB31F01048400C8EA7D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0374D96E629E50B185B70D2C /* Pods-Automatic Depolyment.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = WRBW3Z36M6;
