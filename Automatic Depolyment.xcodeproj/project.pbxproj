@@ -137,8 +137,7 @@
 				TargetAttributes = {
 					BC077C991F01048400C8EA7D = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = WRBW3Z36M6;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -349,11 +348,12 @@
 			baseConfigurationReference = ED1E2BF7B932D68F8C66FA46 /* Pods-Automatic Depolyment.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = WRBW3Z36M6;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Automatic Depolyment/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Home.Automatic-Depolyment";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -362,11 +362,12 @@
 			baseConfigurationReference = 0374D96E629E50B185B70D2C /* Pods-Automatic Depolyment.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = WRBW3Z36M6;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Automatic Depolyment/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Home.Automatic-Depolyment";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
@@ -380,7 +381,7 @@
 				BC077CB01F01048400C8EA7D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		BC077CB11F01048400C8EA7D /* Build configuration list for PBXNativeTarget "Automatic Depolyment" */ = {
 			isa = XCConfigurationList;
@@ -389,6 +390,7 @@
 				BC077CB31F01048400C8EA7D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
